@@ -24,6 +24,24 @@
   </head>
   <body>
     <div class="container-scroller">
+      <div class="modal" id="createProjectModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Create a New Project</h3>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <input type="text" id="projectNameInput" placeholder="Project Name" class="form-control title-input" style="margin-bottom: 20px; border: none;">
+              <textarea type="text" id="projectDescriptionInput" placeholder="Project Description" class="form-control" style="margin-bottom: 10px; height: 100px; border:none;"></textarea>
+              <input type="text" id="projectDeadlineInput" placeholder="Add collaborators" class="form-control" style="margin-bottom: 10px; border:none;">
+            </div>
+            <div class="modal-footer">
+              <button style="background-color: #7B61FF; border-color: transparent;" type="button" class="btn btn-primary new-add-btn">Create New Project</button>
+            </div>
+          </div>
+        </div>
+      </div>      
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
@@ -79,11 +97,8 @@
               </div>
             </div>
           </li>
-          <li class="nav-item nav-category">
-            <span class="nav-link">Navi</span>
-          </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#createProjectModal">
               <span class="menu-icon">
                 <i class="mdi mdi-plus-box"></i>
               </span>
@@ -95,7 +110,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
-              <span class="menu-title">Project 1</span>
+              <span class="menu-title">Project Artrio</span>
             </a>
           </li>
           <li class="nav-item menu-items">
@@ -103,7 +118,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
-              <span class="menu-title">Project 2</span>
+              <span class="menu-title">Data Structure</span>
             </a>
           </li>
           <li class="nav-item menu-items">
@@ -111,7 +126,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
-              <span class="menu-title">Project 3</span>
+              <span class="menu-title">FESENI</span>
             </a>
           </li>
         </ul>
@@ -392,7 +407,7 @@
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Created and developed by Artrio</span>
+              <span class="text d-block text-center text-sm-left d-sm-inline-block">Created and developed by Artrio</span>
               <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Rafiy Umar Luqman</span>
             </div>
           </footer>
@@ -492,6 +507,7 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/chat.js"></script>
     <script src="../../assets/js/file.js"></script>
+    <script src="../../assets/js/newproject.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
     <script src="../../assets/js/dashboard.js"></script>

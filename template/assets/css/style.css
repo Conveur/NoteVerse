@@ -15781,7 +15781,7 @@ code {
 
 /* Footer */
 .footer {
-  background: #000000;
+  background: linear-gradient(45deg, #FFA800, #FF78B9);
   padding: 20px 1rem;
   transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
