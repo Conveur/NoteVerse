@@ -19,6 +19,47 @@
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
   </head>
   <body>
+    <nav class="navbar p-0 fixed-top d-flex flex-row" style="margin-left: -16%;">
+      <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo-mini" href="/template/index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+      </div>
+      <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center fixed-top" style="margin-left: 3%; margin-top:0.8%">
+          <a class="sidebar-brand brand-logo" href="../../../index.html"><img src="../../assets/images/logo.svg" alt="logo" /></a>
+          <a style="margin-left: 2%;" class="sidebar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../../pages/samples/blank-page.html">
+              <span class="menu-title">Home</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../../pages/project1/overview.html">
+              <span class="menu-title">Products</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items border-right">
+            <a class="nav-link" href="../../pages/project1/overview.html">
+              <span class="menu-title">Support</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../../pages/project1/overview.html">
+              <span class="menu-title">Login</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../../pages/project1/overview.html">
+              <span class="menu-title">Sign Up</span>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-format-line-spacing"></span>
+        </button>
+      </div>
+    </nav>
     <div class="container-scroller">
       <div class="container-fluid page-body-wrapper full-page-wrapper">
         <div class="row w-100 m-0">
@@ -27,28 +68,21 @@
               <img src="../../assets/images/signup.png">
               <h4 style="color: #7B61FF; text-align: center;">NoteVerse allows you to be creative and<br>more productive in a collaboration space.<br>Sign up now!</h4>
             </div>
-            <div style="background-image: linear-gradient(45deg, #E9FDFF, #F3EEFF);" class="card col-lg-4 mx-auto">
+            <div style="border: none; background-image: linear-gradient(45deg, #E9FDFF, #F3EEFF);" class="card col-lg-4 mx-auto">
               <div class="card-body px-5 py-5">
                 <h3 style="color: #FF8A92;"card-title text-left mb-3">Sign Up</h3>
                 <form>
                   <div class="form-group">
-                    <input type="text" class="form-control p_input" placeholder="Full Name">
+                    <input type="text" id="projectDeadlineInput" class="form-control p_input" placeholder="Full Name">
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control p_input" placeholder="Email">
+                    <input type="email" id="projectDeadlineInput"class="form-control p_input" placeholder="Email">
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control p_input" placeholder="Password">
-                  </div>
-                  <div class="form-group d-flex align-items-center justify-content-between">
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input"> Remember me </label>
-                    </div>
-                    <a href="#" class="forgot-pass">Forgot password</a>
+                    <input type="password" id="projectDeadlineInput" class="form-control p_input" placeholder="Password">
                   </div>
                   <div class="text-center">
-                    <button style="background-image: linear-gradient(45deg, #7B61FF, #A981FE);"  type="submit" class="btn btn-primary btn-block enter-btn">Create Account</button>
+                    <button style="background-image: linear-gradient(45deg, #7B61FF, #A981FE);"  type="submit" class="btn btn-primary btn-block enter-btn"><a style="color: white;" href="login.html">Create Account</a></button>
                   </div>
                   <div class="d-flex">
                     <button class="btn btn-facebook col mr-2">
@@ -56,13 +90,19 @@
                     <button class="btn btn-google col">
                       <i class="mdi mdi-google-plus"></i> Google plus </button>
                   </div>
-                  <p class="sign-up text-center">Already have an Account?<a href="#"> Log In</a></p>
+                  <p class="sign-up text-center">Already have an account?<a href="../samples/login.html"> Log In</a></p>
                   <p class="terms">By creating an account you are accepting our<a href="#"> Terms & Conditions</a></p>
                 </form>
               </div>
             </div>
           </div>
           <!-- content-wrapper ends -->
+          <footer class="footer fixed-bottom" style="width: 100%; height: 8%;">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text d-block text-center text-sm-left d-sm-inline-block" style="color: white;">Created and developed by Artrio</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Rafiy Umar Luqman</span>
+            </div>
+          </footer>
         </div>
         <!-- row ends -->
       </div>
