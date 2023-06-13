@@ -1,36 +1,3 @@
-//   // Get the necessary elements
-// const projectName = document.getElementById('projectlist');
-// const inputTitle = document.querySelector('.title-input');
-// const addButton = document.querySelector('.new-add-btn');
-
-// // Event listener for the button click
-// addButton.addEventListener('click', function() {
-//   // Get the input value
-//   const titleText = inputField.value.trim();
-
-//   // Create a new chat message element
-//   const newProject = document.createElement('div');
-//   newProject.classList.add('nav-item', 'menu-items');
-
-//   // Construct the HTML for the chat message
-//   newProject.innerHTML = `
-//     <a class="nav-link" href="../../pages/project1/overview.html">
-//         <span class="menu-icon">
-//         <i class="mdi mdi-speedometer"></i>
-//         </span>
-//         <span class="menu-title">${titleText}</span>
-//     </a>
-//   `;
-
-//   // Append the new chat message to the chatMessages element
-//   projectlist.appendChild(newProject);
-
-//   // Clear the input field
-//   inputField.value = '';
-// });
-
-// script.js
-
 // Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", function () {
     // Add event listener to the "Create New Project" button

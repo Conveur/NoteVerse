@@ -9921,15 +9921,15 @@ input[type="button"].btn-block {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #ffffff;
+  color: #4D45A2;
   text-align: inherit;
   white-space: nowrap;
-  background-color: transparent;
+  background-color: #ffffff;
   border: 0; }
   .dropdown-item:hover, .dropdown-item:focus {
-    color: #16181b;
+    color: #ADB4FF;
     text-decoration: none;
-    background-color: #13151b; }
+    background-color: #ADB4FF; }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
