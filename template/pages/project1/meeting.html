@@ -41,7 +41,27 @@
             </div>
           </div>
         </div>
-      </div>      
+      </div>
+      <div class="modal" id="meetingModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Create a Meeting</h3>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <input type="text" id="projectNameInput" placeholder="Meeting title" class="form-control title-input" style="margin-bottom: 40px; border: none;">
+              <input type="text" id="projectDate" placeholder="Date" class="form-control" style="margin-bottom: 10px; border: none;">
+              <input type="text" id="projectTime" placeholder="Time" class="form-control" style="margin-bottom: 10px; border:none;">
+              <input type="text" id="projectDeadlineInput" placeholder="Location" class="form-control" style="margin-bottom: 10px; border:none;">
+              <input type="text" id="projectURL" placeholder="URL" class="form-control" style="margin-bottom: 10px; border:none;">
+            </div>
+            <div class="modal-footer">
+              <button style="background-color: #7B61FF; border-color: transparent;" type="button" class="btn btn-primary meeting-add-btn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>    
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
@@ -352,11 +372,14 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <h3>Meeting</h3>
+            <div class="add-items d-flex" id="uploadfile" style="margin-left: -1%;">
+              <button data-toggle="modal" data-target="#meetingModal" style="background-color: #ADB4FF ; min-width: 55px; min-height: 55px; border: none;" class="add btn btn-primary file-add-btn"><i class="mdi mdi-account-multiple-plus" style="min-width: 45px; min-height: 45px;"></i>Create a meeting</button>
+            </div>
             <h4 class="card-title" style="font-style: italic;">Upcoming Meeting</h4>
             <div class="table-responsive">
               <table class="table table-contextual">
-                <tbody>
-                  <tr class="table-warning">
+                <tbody id="meetingList">
+                  <tr class="table-warning" onclick="window.open('https://meet.google.com/yod-jxxv-uiz', '_blank')">
                     <td><i class="mdi mdi-calendar" style="font-size: 52px; margin-left: 20%;"></i></td>
                     <td><h4>Post-Mortem Meeting</h4>
                     <p><br>Date: 15 June 2023</p>
@@ -506,6 +529,7 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/chat.js"></script>
     <script src="../../assets/js/newproject.js"></script>
+    <script src="../../assets/js/meeting.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
     <script src="../../assets/js/dashboard.js"></script>

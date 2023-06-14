@@ -8692,6 +8692,10 @@ pre {
   .table-hover .table-warning:hover > th {
     background-color: #d28c00; }
 
+.table-warning:hover{
+  cursor: pointer;
+}
+
 .table-danger,
 .table-danger > th,
 .table-danger > td {
@@ -12376,6 +12380,18 @@ a.close.disabled {
   background-color: white;
 }
 
+
+#projectDate, #projectTime, #projectURL{
+  color: #000;
+}
+
+#projectDate, #projectTime, #projectURL:active{
+  background-color: white;
+}
+
+#projectURL:enabled{
+  background-color: white;
+}
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
